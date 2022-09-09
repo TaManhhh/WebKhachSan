@@ -1,0 +1,36 @@
+import "../header/header.css";
+import { NavLink } from "react-router-dom";
+
+const NavLinks = (props) => {
+  const activeClass = (params) => {
+    return params.isActive ? "active-menu" : "active-menu-items";
+  };
+
+  return (
+    <div>
+      <ul className=" menu">
+        <li>
+          <NavLink className={activeClass} to="/Home">
+            HOME
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={activeClass} to="/The-Booking">
+            THE BOOKING
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={activeClass} to="/Rooms">
+            ROOMS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={activeClass} to="/Contact">
+            CONTACT
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+  );
+};
+export default NavLinks;
