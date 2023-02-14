@@ -5,24 +5,20 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { FaHotel } from "react-icons/fa";
+import Header from "../../components/header/Header";
 import "./booking.css";
 
 function Booking() {
-  // const [showClass, setShowClass] = useState(false);
-  // const addShowClass = () => {
-  //   setShowClass(!showClass);
-  // };
   return (
     <div className="booking-container">
-     
+     <Header/>
 
       <div
         className="booking-container-h1"
         style={{
           color: "white",
           fontSize: 35,
-          // margin: "50px 0 1.5em",
-          paddingTop:100,
+          paddingTop:200,
           letterSpacing: 5,
           wordSpacing: 11,
           textTransform: "capitalize",

@@ -1,6 +1,6 @@
 .row-style {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+   
     display: flex;
     flex-wrap: wrap;
 }
@@ -8,9 +8,8 @@
 .inner-style {
     margin: 25px;
 }
-.hover-card hover{
-    background-color:#99FFFF;
-}
+
 .hover-card{
-    padding-top:20px;
+    padding-top:30px;
+ 
 }

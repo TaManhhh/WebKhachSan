@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
 
 .slider-container {
     height: 100vh;
@@ -30,8 +26,8 @@
     font-size: 30px;
     line-height: 34px;
     color: white;
-    left: 30%;
-    top: 65%;
+    top: 60%;
+    transform: translate(-50%, -50%);
     position: absolute;
 }
 
@@ -40,12 +36,12 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 60%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    font-size: 68px;
+    line-height: 68px;
+    color: white;
+    font-family: cinzel;
 }
 
 .prev,

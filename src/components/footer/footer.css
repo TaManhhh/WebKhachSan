@@ -1,6 +1,6 @@
 .footer {
-  background-color: #333239;
-  padding: 60px 60px 0;
+  background-color: #423a36;
+  padding: 20px 60px 0;
   margin-top:20px;
 }
 .footer-ul {
@@ -11,7 +11,7 @@
 .footer-li {
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   width: 300px;
 }
 .footer-tl {

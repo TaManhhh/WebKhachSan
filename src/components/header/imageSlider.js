@@ -1,16 +1,20 @@
+import Slider1 from "../img/Slider1.jpg";
+import Slide2 from "../img/Slide2.jpg";
+import Slide3 from "../img/Slide3.jpg";
 
-export default [{
+export default [
+{
   title:"The finest hotel near Rockefeller Center",
-  img:"https://erios.webhotel.vn/images/rev_sliderhome1_2.png",
-  urls:"https://erios.webhotel.vn/images/rev_slidehome4_1.jpg",
+  img: "A perfect holiday destination",
+  urls:Slider1,
 },
 {
   title:"The finest hotel near Rockefeller Center",
-  img:"https://erios.webhotel.vn/images/rev_sliderhome1_2.png",
-  urls:"https://erios.webhotel.vn/images/rev_slidehome4_2.jpg",
+  img:" A perfect holiday destination",
+  urls:Slide2,
 },
 {
   title:"The finest hotel near Rockefeller Center",
-  img:"https://erios.webhotel.vn/images/rev_sliderhome1_2.png",
-  urls:"https://erios.webhotel.vn/images/rev_slidehome4_3.jpg",
+  img:"A perfect holiday destination",
+  urls:Slide3,
 }]

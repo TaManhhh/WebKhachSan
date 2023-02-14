@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
-import { LoginContext } from "../../context/AuthContext";
-import Logout from "../auth/logout/Logout";
+import React from "react";
 import { Outlet } from "react-router-dom";
-// import Room from "../rooms/Rooms";
-
+import ImgLeft from "../img/aboutus01.jpg";
+import Chef from "../img/chef-cook.jpg";
+import Bar from "../img/bar.jpg";
+import Spa from "../img/spa.jpg";
+import Avatar from "../img/hehe.jpg";
+import Profile from "../img/profile-2.jpg";
 // import { Contact } from "../Contact/Contact";
 
 import { NavLink } from "react-router-dom";
@@ -12,19 +14,15 @@ import { faArrowRight, faStar } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
 import Slide from "../header/Slide";
 import RoomsSuites from "./RoomsSuites";
+import Header from "../header/Header";
 // import Header from "../header/Header";
 function Home() {
-  const { login } = useContext(LoginContext);
-
   return (
     <div className="home">
-      {login ? <Logout /> : null}
+      <Header />
       <Slide />
       <div className="content">
-        <NavLink
-          className=" buttonn flex hover:bg-white "
-          to="/auth"
-        >
+        <NavLink className=" buttonn flex hover:bg-white " to="/Rooms">
           VIEW OUR ROOM <FontAwesomeIcon icon={faArrowRight} />{" "}
         </NavLink>
       </div>
@@ -57,10 +55,7 @@ function Home() {
             </div>
             <div className="right grid grid-flow-col">
               <div className="img-left  ">
-                <img
-                  src="https://erios.webhotel.vn/images/home1_erios01.jpg"
-                  alt=""
-                ></img>
+                <img src={ImgLeft} alt=""></img>
               </div>
             </div>
           </div>
@@ -85,11 +80,7 @@ function Home() {
           </div>
           <div className="special-content">
             <div className="grid grid-cols-2 ">
-              <img
-                className="special-img"
-                src="https://erios.webhotel.vn/images/h3-meeting.jpg"
-                alt=""
-              />
+              <img className="special-img" src={Chef} alt="" />
               <div className="special-ct">
                 <div className="sp-title">Restaurants vs Bars</div>
                 <div className="sp-des">
@@ -97,10 +88,7 @@ function Home() {
                   and bars, we welcome guests for a inspiring culinary
                   experience.
                 </div>
-                <NavLink
-                  className=" buttonn  flex hover:bg-white "
-                  to="/The-Booking"
-                >
+                <NavLink className=" buttonn  flex hover:bg-white " to="/Rooms">
                   LEARN MORE <FontAwesomeIcon icon={faArrowRight} />{" "}
                 </NavLink>
               </div>
@@ -110,23 +98,12 @@ function Home() {
                   Achieve more with every meeting and event you plan with us.
                   Create priceless experiences that are engaging and productive.
                 </div>
-                <NavLink
-                  className=" buttonn  flex hover:bg-white "
-                  to="/The-Booking"
-                >
+                <NavLink className=" buttonn  flex hover:bg-white " to="/Rooms">
                   LEARN MORE <FontAwesomeIcon icon={faArrowRight} />{" "}
                 </NavLink>
               </div>
-              <img
-                className="special-img"
-                src="https://erios.webhotel.vn/images/h3-restaurantbar.jpg"
-                alt=""
-              />
-              <img
-                className="special-img"
-                src="https://erios.webhotel.vn/images/h3-weddings.jpg"
-                alt=""
-              />
+              <img className="special-img" src={Bar} alt="" />
+              <img className="special-img" src={Spa} alt="" />
               <div className="special-ct">
                 <div className="sp-title">Weddings vs Celebrations</div>
                 <div className="sp-des">
@@ -134,10 +111,7 @@ function Home() {
                   and bars, we welcome guests for a inspiring culinary
                   experience.
                 </div>
-                <NavLink
-                  className=" buttonn  flex hover:bg-white "
-                  to="/The-Booking"
-                >
+                <NavLink className=" buttonn  flex hover:bg-white " to="/Rooms">
                   LEARN MORE <FontAwesomeIcon icon={faArrowRight} />{" "}
                 </NavLink>
               </div>
@@ -154,7 +128,7 @@ function Home() {
           <div className="tripadvisor">
             <img
               className="icon-trip "
-              src="https://erios.webhotel.vn/images/tripadvisor-logo-BDB616E7F6-seeklogo.com.png"
+              src="https://static.ybox.vn/2020/9/4/1600941241699-1594126270885-1577762085284-1571027713600-logo%20techkids%20moi%207%20(1)-05%20(1).png"
               alt=""
             />
             <p className="tt">5.0</p>
@@ -168,7 +142,7 @@ function Home() {
             <p className="text text-white">3,000 Review</p>
             <NavLink
               className=" button  flex hover:bg-amber-500 "
-              to="/auth"
+              to="/Contact"
             >
               WRITE A Review <FontAwesomeIcon icon={faArrowRight} />{" "}
             </NavLink>
@@ -177,9 +151,10 @@ function Home() {
             <p className="text-2xl font-bold ">Excellent hotel</p>
             <div className="text text-base scroll-pb-5">
               {" "}
-              We stayed here for a long weekend and was very impressed with the
-              hotel, the staff were excellent,very friendly and couldn't do
-              enough for us.Rooms were very nice , clean and comfortable.
+              No matter who you are <br />
+              where are you from , if you have a kind heart <br />
+              Just remember <br />
+              You are the most beautiful person
             </div>
             <div className="rate ">
               <FontAwesomeIcon className="star " icon={faStar} />
@@ -189,21 +164,18 @@ function Home() {
               <FontAwesomeIcon className="star" icon={faStar} />
             </div>
             <div className="avatar">
-              <img
-                className="rounded-full"
-                src="https://erios.webhotel.vn/images/testimonial4.jpg"
-                alt=""
-              />
+              <img className="rounded-full ml-14" src={Avatar} alt="" />
             </div>
-            <p className="text">May 20,2022</p>
+            <p className="text">Feb 09,2023</p>
           </div>
           <div className="testimonials">
             <p className="text-2xl font-bold ">Excellent hotel</p>
             <div className="text text-base scroll-pb-5">
               {" "}
-              We stayed here for a long weekend and was very impressed with the
-              hotel, the staff were excellent,very friendly and couldn't do
-              enough for us.Rooms were very nice , clean and comfortable.
+              We stayed here for a long weekend <br/>
+              and was very impressed with the
+              hotel, the staff were<br/> excellent,very friendly and couldn't do
+              enough for us.Rooms were very nice , clean and comfortable.<br/>
             </div>
             <div className="rate ">
               <FontAwesomeIcon className="star " icon={faStar} />
@@ -213,11 +185,7 @@ function Home() {
               <FontAwesomeIcon className="star" icon={faStar} />
             </div>
             <div className="avatar">
-              <img
-                className="rounded-full"
-                src="https://erios.webhotel.vn/images/testimonial4.jpg"
-                alt=""
-              />
+              <img className="rounded-full ml-14" src={Profile} alt="" />
             </div>
             <p className="text">May 20,2022</p>
           </div>

@@ -4,7 +4,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 60%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -18,14 +17,14 @@
     border-style: solid;
     color: white;
     display: inline-block;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 22.5px;
     text-align: center;
     text-transform: uppercase;
-    padding: 18px 50px;
+    padding: 10px 30px;
     border-radius: 30px;
-    margin-top: 13px;
+    margin-top: 10px;
     margin-bottom: 5px;
     font-family:font-serif;
 }
@@ -91,8 +90,8 @@
 
 .special-content {
     display: block;
-    background-image: url("https://erios.webhotel.vn/images/home1_erios03.jpg");
-    color: white;
+    font-family: PT Serif;
+    color: black;
 }
 
 .special-ct {
@@ -128,9 +127,8 @@
 }
 
 .icon-trip {
-    width: 105px;
     height: 105px;
-    margin-left: 185px;
+    margin-left: 130px;
 }
 
 .tt {
@@ -154,14 +152,14 @@
     font-size: 16px;
     line-height: 30px;
     margin: 15px 35px;
+    padding-right: 20px;
 }
 
 .avatar {
     margin-bottom: 20px;
-    height: 50px;
-    width: 50px;
-    margin-left: 225px;
-    margin-top: 20px;
+    width: 90px;
+    margin-left: 140px;
+   margin-top: 20px;
     margin-bottom: 20px;
 }
 

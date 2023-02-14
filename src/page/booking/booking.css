@@ -1,21 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .booking-container {
     
     font-size: 100%;
     background: url("https://aeros.vn/upload/images/aeros-phong-suite-la-gi-2.webp") no-repeat center top;
-    /* background-attachment: fixed; */
+
     background-size: cover;
-    /* background-position: center; */
+
     height: 1000px;
 }
 
 
-/* ==============================  HEADER ============================*/
+
 
 header nav {
     padding: 0;
@@ -40,7 +36,7 @@ header nav {
 .main-nav li {
     list-style: none;
     display: inline-block;
-    /* margin: 0 20px; */
+
 }
 
 .main-nav li a {
@@ -82,7 +78,7 @@ a:active {
 @media (max-width: 909px) {
     .row .icon {
         display: block;
-        /* margin-top: 22px; */
+  
     }
     .main-nav {
         position: fixed;
@@ -113,23 +109,21 @@ a:active {
     }
 }
 
-*/
-/* =============================== FORM =============================== */
+
 
 .booking-container-h1 {
-    font-family: "Flamenco", cursive;
+    font-family: cinzel;
     font-size: 54px;
     font-weight: 100;
     text-transform: capitalize;
     color: rgb(136, 23, 23);
     word-spacing: 11px;
     letter-spacing: 5px;
-    margin: 50px 0 1.5em;
     text-align: center;
 }
 
 .booking-item {
-    /* max-width: 700px; */
+
     width: 80%;
     background: rgba(0, 0, 0, 0.51);
     padding: 25px 30px;
@@ -145,13 +139,13 @@ a:active {
     color: rgb(13, 12, 12);
     text-transform: capitalize;
     margin-bottom: 1em;
-    /* font-weight: 500; */
+
     letter-spacing: 7px;
-    /* height: 100px; */
+
 }
 
 .booking-content {
-    /* margin: 4%; */
+
     display: inline-block;
 }
 
@@ -159,7 +153,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin: 200px 0 12px 0; */
+
 }
 
 form .user-details .input-box {
@@ -214,7 +208,7 @@ option {
 }
 
 
-/* ============================ BUTTON ============================ */
+
 
 form .button-booking {
     display: flex;
@@ -236,24 +230,3 @@ form .button-booking button {
     font-size: 25px;
     cursor: pointer;
 }
-
-
-/* @media (max-width: 584px) {
-    .container {
-        max-width: 100%;
-    }
-    form .user-details .input-box {
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    .booking-content form .user-details {
-        max-height: 300px;
-        overflow-y: scroll;
-    }
-    .user-details::-webkit-scrollbar {
-        width: 5px;
-    }
-    .booking-container h1 {
-        font-size: 36px;
-    }
-} */

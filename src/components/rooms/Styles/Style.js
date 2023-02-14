@@ -1,66 +1,67 @@
 import "./Style.css";
 import { Title } from "./Title";
-import { Link, NavLink } from "react-router-dom";
-// import useFetch from "./useEffect";
+import { NavLink } from "react-router-dom";
+import Room1 from "../../img/room-1.jpg";
+import Room2 from "../../img/room-2.jpg";
+import Room3 from "../../img/room-3.jpg";
+import Room4 from "../../img/room_1_n_1-1024x683.jpg";
 export const Style = () => {
-  // const { data } = useFetch("http://127.0.0.1:5000/user/room");
-  // console.log(data);
+  
   return (
-    <div>
+
       <div className="row-style">
-        <NavLink className='hover-card'  to="62e26ef06982e28714ab5bf4">
+        <NavLink className='hover-card'  to="/The-Booking">
           <Title
-            img="	https://erios.webhotel.vn/images/room-5-768x624.jpg"
+            img={Room1}
             title="Luxury Rooms"
           />
         </NavLink>
-        <NavLink className='hover-card' to="62e272396982e28714ab5bf5">
-          {" "}
+        <NavLink className='hover-card' to="/The-Booking">
+       
           <Title
-            img="	https://erios.webhotel.vn/images/room-1-768x624.jpg"
+            img={Room2}
             title="Double Rooms"
           />
         </NavLink>
-        <NavLink className='hover-card' to="62e274ef6982e28714ab5bfb">
+        <NavLink className='hover-card' to="/The-Booking">
           <Title
-            img="	https://erios.webhotel.vn/images/room-5-768x624.jpg"
+            img={Room3}
             title="Classic Rooms"
           />
         </NavLink>
-        <NavLink className='hover-card' to="62e2748f6982e28714ab5bfa">
-          {" "}
+        <NavLink className='hover-card' to="/The-Booking">
+          
           <Title
-            img="	https://erios.webhotel.vn/images/room-6-768x624.jpg"
+            img={Room4}
             title="Premium Rooms"
           />
         </NavLink>
-        <NavLink className='hover-card' to="62e2772ea4492a3727771c11">
+        <NavLink className='hover-card' to="/The-Booking">
           <Title
-            img="	https://erios.webhotel.vn/images/room-1-768x624.jpg
-          "
+            img={Room2}
             title="Standard Rooms"
           />
         </NavLink>
-        <NavLink className='hover-card' to="62e275616982e28714ab5bfd">
+        <NavLink className='hover-card' to="/The-Booking">
           <Title
-            img="		https://erios.webhotel.vn/images/room-1-768x624.jpg"
+            img={Room4}
             title="Double Rooms"
           />
         </NavLink>
-        <NavLink className='hover-card' to="62e275d6a4492a3727771c0f">
+        <NavLink className='hover-card' to="/The-Booking">
           <Title
-            img="	https://erios.webhotel.vn/images/room-1-768x624.jpg"
+            img={Room3}
             title="Classic Rooms"
           />
         </NavLink>
-        <NavLink className='hover-card' to="62e27824a4492a3727771c19">
-          {" "}
+        <NavLink className='hover-card' to="/The-Booking">
+
           <Title
-            img="	https://erios.webhotel.vn/images/room-1-768x624.jpg"
+            img={Room2}
             title="Golden Rooms"
           />
         </NavLink>
       </div>
-    </div>
+    
   );
 };

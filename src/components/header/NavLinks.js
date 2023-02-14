@@ -16,7 +16,7 @@ const NavLinks = (props) => {
         </li>
         <li>
           <NavLink className={activeClass} to="/The-Booking">
-            THE BOOKING
+            BOOKING
           </NavLink>
         </li>
         <li>
