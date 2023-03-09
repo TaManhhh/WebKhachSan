@@ -66,7 +66,7 @@ function LoginScreen() {
               </button>
 
               <h4>
-                <span className="signupScreen__gray">New to Netflix? </span>
+                <span className="signupScreen__gray">Create a new account </span>
                 <span
                   disabled={loading}
                   className="signupScreen__link"
@@ -76,6 +76,8 @@ function LoginScreen() {
                 </span>
               </h4>
             </form>
+
+            
           </div>
         ) : (
           <SignupScreen />

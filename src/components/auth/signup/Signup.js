@@ -15,16 +15,17 @@ function SignupScreen() {
   async function handleSignup(e) {
     e.preventDefault();
     setLoading(true);
-
     try {
       await signup(emailRef.current.value, passwordRef.current.value);
       setLogin(true);
       localStorage.setItem("user", email);
+      console.log(email)
     } catch (error) {
       alert(error.message);
     }
     setLoading(false);
   }
+
 
   const clickSignin = () => {
     setCheck(false)

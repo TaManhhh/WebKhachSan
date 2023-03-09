@@ -8,7 +8,7 @@ const NavLinks = (props) => {
 
   return (
     <div>
-      <ul className=" menu">
+      <ul className=" flex pt-4 space-x-14">
         <li>
           <NavLink className={activeClass} to="/Home">
             HOME

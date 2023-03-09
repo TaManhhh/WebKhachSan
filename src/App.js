@@ -16,7 +16,7 @@ import SignupScreen from "./components/auth/signup/Signup";
 function App() {
   const { login, check } = useContext(LoginContext);
   return (
-    <div className="App">
+    <div className="App ">
       {login === true ? (
         <header>
           <Header />
